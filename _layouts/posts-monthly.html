@@ -7,12 +7,10 @@ layout: archive
 <ul class="taxonomy__index">
   {% assign postsInMonth = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y-%m"' %}
   {% for month in postsInMonth %}
-    {% assign year = month.name | split: '-' | first %}
-    {% assign monthNum = month.name | split: '-' | last %}
-    {% assign monthName = '1970-' ~ monthNum ~ '-01' | date: "%B" %}
+    {% assign monthName = month.name | date: "%B %Y" %}
     <li>
       <a href="#{{ month.name }}">
-        <strong>{{ monthName }} ({{ year }})</strong> <span class="taxonomy__count">{{ month.items | size }}</span>
+        <strong>{{ monthName }}</strong> <span class="taxonomy__count">{{ month.items | size }}</span>
       </a>
     </li>
   {% endfor %}
@@ -21,11 +19,9 @@ layout: archive
 {% assign entries_layout = page.entries_layout | default: 'list' %}
 {% assign postsByMonth = site.posts | where_exp: "item", "item.hidden != true" | group_by_exp: 'post', 'post.date | date: "%Y-%m"' %}
 {% for month in postsByMonth %}
-  {% assign year = month.name | split: '-' | first %}
-  {% assign monthNum = month.name | split: '-' | last %}
-  {% assign monthName = '1970-' ~ monthNum ~ '-01' | date: "%B" %}
+  {% assign monthName = month.name | date: "%B %Y" %}
   <section id="{{ month.name }}" class="taxonomy__section">
-    <h2 class="archive__subtitle">{{ month.name | date: "%B (%Y)" }}</h2>
+    <h2 class="archive__subtitle">{{ monthName }}</h2>
     <div class="entries-{{ entries_layout }}">
       {% for post in month.items %}
         {% include archive-single.html type=entries_layout %}
