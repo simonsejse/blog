@@ -25,7 +25,7 @@ layout: archive
   {% assign monthNum = month.name | split: '-' | last %}
   {% assign monthName = '1970-' ~ monthNum ~ '-01' | date: "%B" %}
   <section id="{{ month.name }}" class="taxonomy__section">
-    <h2 class="archive__subtitle">{{ monthName }} ({{ year }})</h2>
+    <h2 class="archive__subtitle">{{ month.name | date: "%B (%Y)" }}</h2>
     <div class="entries-{{ entries_layout }}">
       {% for post in month.items %}
         {% include archive-single.html type=entries_layout %}
