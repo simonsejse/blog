@@ -3,7 +3,7 @@ main:
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
    - title: "Archive (monthly)"
-     url: /month-archive/
+     url: /monthly-archive/
    - title: "Archive (yearly)"
      url: /yearly-archive/
   # - title: "Sample Collections"
