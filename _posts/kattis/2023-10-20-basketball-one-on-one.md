@@ -25,13 +25,13 @@ The input consists of a single line with no more than characters: the record of 
 
 An example output could be 
 
+### Input
 ```bash
-Input:
 A2B1A2B2A1A2A2A2
 ```
 
+### Output
 ```bash
-Output:
 A
 ```
 
