@@ -41,7 +41,17 @@ A2B2A1B2A2B1A2B2A1B2A1A1B1A1A2
 A
 ```
 
-# My Solution
+# Solution
+A simple iterative approach where we just check each letter and see if it's A or B and increment the corresponding number.
+
+## Complexity
+
+### Runtime Complexity
+The solution has a 
+
+### Space Complexity
+The solution has a 
+
 
 
 ## Code
