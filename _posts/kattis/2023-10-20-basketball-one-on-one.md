@@ -33,4 +33,6 @@ A2B1A2B2A1A2A2A2
 A
 ```
 
+
+## Footnotes
 [^1]: Rules taken from https://open.kattis.com/problems/basketballoneonone
