@@ -42,7 +42,6 @@ if string has $n$ characters the space requirements will be $\mathbb{O}(n)$. For
 - $\mathbb{O}(n) + \mathbb{O}(1) + \mathbb{O}(1)=\mathbb{O}(n)$
 
 
-
 ## Code
 ```rust
 use std::io;
