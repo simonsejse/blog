@@ -43,6 +43,8 @@ if string has $n$ characters the space requirements will be $\mathbb{O}(n)$. For
 
 
 ## Code
+
+### Imperative approach 
 ```rust
 use std::io;
 
@@ -70,6 +72,35 @@ pub fn main() {
   println!("B");
 }
 ```
+
+### Functional approach
+
+```rust
+use std::io;
+
+pub fn main() {
+  let mut input: String = String::new();
+
+  io::stdin().read_line(&mut input).expect("Failed to read line");
+
+  let (a, b) = input.chars().fold((0, 0), |(a, b), ch: char| {
+    match ch {
+        'A' => (a + 1, b),
+        'B' => (a, b + 1),
+        _ => (a, b),
+    }
+  });
+
+  if a > b {
+    println!("A");
+    return;
+  }
+  println!("B");
+}
+```
+
+
+
 
 ## Footnotes
 [^1]: Rules taken from https://open.kattis.com/problems/basketballoneonone
