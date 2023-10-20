@@ -45,6 +45,37 @@ A2B2A1B2A2B1A2B2A1B2A1A1B1A1A2
 A
 ```
 
+## My Solution
+
+
+### Code
+```rust
+use std::io;
+
+pub fn main() {
+  let mut input: String = String::new();
+
+  io::stdin().read_line(&mut input).expect("Failed to read line");
+
+  let mut a:u16 = 0; 
+  let mut b:u16 = 0; 
+
+  for ch in input.chars() {
+    if ch == 'A' {
+      a += 1;
+    }else if ch == 'B' {
+      b += 1;
+    }else {
+      continue;
+    }
+  }
+  if a > b {
+    println!("A");
+    return;
+  }
+  println!("B");
+}
+```
 
 ## Footnotes
 [^1]: Rules taken from https://open.kattis.com/problems/basketballoneonone
