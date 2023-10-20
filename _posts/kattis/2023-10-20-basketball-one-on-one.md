@@ -25,12 +25,22 @@ The input consists of a single line with no more than characters: the record of 
 
 An example output could be 
 
-### Input
+### Sample Input 1
 ```bash
 A2B1A2B2A1A2A2A2
 ```
 
-### Output
+### Sample Output 1
+```bash
+A
+```
+
+### Sample Input 2
+```bash
+A2B2A1B2A2B1A2B2A1B2A1A1B1A1A2
+```
+
+### Sample Output 2
 ```bash
 A
 ```
