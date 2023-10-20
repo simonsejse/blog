@@ -10,7 +10,7 @@ use_math: true
 # datatable: true
 ---
 
-# Problem
+# Problem Description
 
 Alice and Barbara played some friendly games of one-on-one basketball after work, and we agreed to help them keep score.
 
@@ -18,15 +18,13 @@ Alice and Barbara played some friendly games of one-on-one basketball after work
 2. The first player to eleven points wins, with one exception;
 3. If the score is tied $10-10$, the previous rule is replaced by a “win by 2” rule: the first player to lead the other by at least two points wins.[^1]
 
-# Input
+# Input Specification
 The input consists of a single line with no more than characters: the record of one game. The record consists of single letters (either A or B) alternating with single numbers (either 1 or 2).
 
 | Sample Input 1                          | Sample Output 1 |
 |:---------------------------------------:|:---------------:|
-| A2B1A2B2A1A2A2A2                        |        A        |
-| A2B2A1B2A2B1A2B2A1B2A1A1B1A1A2          |        A        |
-|========================================|=================|
-| 🌟 Foot1 🌟                             |  🌟 Foot2 🌟     |
+| `A2B1A2B2A1A2A2A2`                        |        `A`        |
+| `A2B2A1B2A2B1A2B2A1B2A1A1B1A1A2`          |        `A`        |
 
 
 ## 
