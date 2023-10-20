@@ -26,27 +26,6 @@ The input consists of a single line with no more than characters: the record of 
 | `A2B1A2B2A1A2A2A2`                        |        `A`        |
 | `A2B2A1B2A2B1A2B2A1B2A1A1B1A1A2`          |        `A`        |
 
-
-## 
-```bash
-
-```
-
-## 
-```bash
-
-```
-
-## Sample Input 2
-```bash
-A2B2A1B2A2B1A2B2A1B2A1A1B1A1A2
-```
-
-## Sample Output 2
-```bash
-A
-```
-
 # Solution
 A simple iterative approach where we just check each letter and see if it's A or B and increment the corresponding number.
 
