@@ -21,6 +21,8 @@ Alice and Barbara played some friendly games of one-on-one basketball after work
 # Input Specification
 The input consists of a single line with no more than characters: the record of one game. The record consists of single letters (either A or B) alternating with single numbers (either 1 or 2).
 
+
+{: .text-center}
 | Sample Input 1                          | Sample Output 1 |
 |:---------------------------------------:|:---------------:|
 | `A2B1A2B2A1A2A2A2`                        |        `A`        |
