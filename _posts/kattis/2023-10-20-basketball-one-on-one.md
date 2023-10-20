@@ -21,14 +21,22 @@ Alice and Barbara played some friendly games of one-on-one basketball after work
 # Input
 The input consists of a single line with no more than characters: the record of one game. The record consists of single letters (either A or B) alternating with single numbers (either 1 or 2).
 
-## Sample Input 1
+| Sample Input 1                          | Sample Output 1 |
+|:---------------------------------------:|:---------------:|
+| A2B1A2B2A1A2A2A2                        |        A        |
+| A2B2A1B2A2B1A2B2A1B2A1A1B1A1A2          |        A        |
+|========================================|=================|
+| 🌟 Foot1 🌟                             |  🌟 Foot2 🌟     |
+
+
+## 
 ```bash
-A2B1A2B2A1A2A2A2
+
 ```
 
-## Sample Output 1
+## 
 ```bash
-A
+
 ```
 
 ## Sample Input 2
