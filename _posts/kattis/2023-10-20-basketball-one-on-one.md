@@ -100,7 +100,5 @@ pub fn main() {
 ```
 
 
-
-
 ## Footnotes
 [^1]: Rules taken from https://open.kattis.com/problems/basketballoneonone
