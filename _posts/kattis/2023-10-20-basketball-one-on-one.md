@@ -49,7 +49,7 @@ A simple iterative approach where we just check each letter and see if it's A or
 ### Runtime Complexity
 Reading line from the standard input, `io::stdin().read_line(&mut input)`, requires $\mathbb{O}(n)$ time, furthermore, we iterative over each character in the input string `input` which also takes $\mathbb{O}(n)$ time, and last but not least, we have one comparison each loop which takes constant time, i.e., $\mathbb{O}(1)$ time.
 - $\mathbb{O}(n) + \mathbb{O}(n) + \mathbb{O}(1) = \mathbb{O}(n)$
-t
+
 ### Space Complexity
 if string has $n$ characters the space requirements will be $\mathbb{O}(n)$. For two variables a and b, which both 16-bit integers, their space requirements are constant, i.e., $\mathbb{O}(1)$.
 - $\mathbb{O}(n) + \mathbb{O}(1) + \mathbb{O}(1)=\mathbb{O}(n)$
