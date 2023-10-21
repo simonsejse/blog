@@ -3,7 +3,7 @@ main:
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   - title: "Archive (Categories)"
-    url: /monthly-archive/
+    url: /categories/
   - title: "Archive (Monthly)"
     url: /monthly-archive/
   - title: "Archive (Yearly)"
